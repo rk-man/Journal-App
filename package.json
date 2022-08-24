@@ -5,10 +5,10 @@
     "main": "Backend/server.js",
     "scripts": {
         "start": "node Backend/server.js",
-        "server": "nodemon run Backend/server.js",
+        "server": "nodemon Backend/server.js",
         "client": "npm start --prefix frontend",
         "dev": "concurrently \"npm run server\" \"npm run client\" ",
-        "heroku-postbuild": "cd frontend npm install npm run build"
+        "heroku-postbuild": "cd frontend && npm install && npm run build"
     },
     "author": "Naveen RK",
     "license": "ISC",
