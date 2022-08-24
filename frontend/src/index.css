@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+header {
+    padding: 1rem 2rem;
+    height: 7rem;
+    color: white;
+}
+
+.form-container {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-container-main {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-description {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.file-upload-container {
+    width: 50%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 50%;
+    min-height: 30%;
+    padding: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.form-add-entry {
+    width: 75%;
+}
+
+textarea {
+    font-size: 4rem;
+}
+
+.user-entries {
+    margin-top: 8rem;
+    min-height: 40rem;
+    max-width: 100rem;
+    min-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 8rem;
+    row-gap: 8rem;
+}
+
+.entry {
+    width: 100%;
+    color: white;
+    box-shadow: 1rem 1rem 2rem 0.4rem rgba(105, 88, 255, 0.37);
+    border-radius: 1rem;
+}
+
+.entry img {
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+/* ENTRY PAGE */
+.entry-page {
+    padding: 8rem;
+}
+
+.entry-page img {
+    width: 40rem;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.entry-page select option {
+    background-color: white;
+    color: black;
+}
+
+/* ACCOUNT */
+
+.my-account {
+    max-width: 80rem;
+    min-width: 40rem;
+    min-height: 20rem;
+    max-height: 40rem;
+    padding: 4rem;
+}
