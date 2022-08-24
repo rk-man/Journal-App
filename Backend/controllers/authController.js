@@ -70,7 +70,7 @@ exports.login = catchAsync(async (req, res, next) => {
         return next(new appError(400, "Include all fields while logging in"));
     }
 
-    const user = await User.findOne({ email: email });
+    const user = await User.findOne({ email });
 
     if (!user) {
         return next(new appError(404, "No user exist with that email Id"));
